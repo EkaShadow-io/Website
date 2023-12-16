@@ -1,0 +1,244 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/styles/homePage/navBar.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+header{
+  position: sticky;
+  z-index: 30;
+  top: 0;
+}
+nav{
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+.nav__menu-bar{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  cursor: pointer;
+}
+.nav__menu-bar div{
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+}
+.nav__menu-list{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  width: 288px;
+  row-gap: 24px;
+  right: -288px;
+  padding: 24px 16px;
+  transition: all 0.2s;
+  min-height: calc(100vh - 60px);
+  background-color: black;
+}
+.nav__menu-list.active{
+  right: 0;
+}
+.nav__link{
+  font-size: 18px; 
+  position: relative;
+  transition: all 0.2s;
+}
+
+.nav__link:hover{
+ font-weight: bold;
+}
+
+.center{
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .nav__menu-bar{
+    display: none;
+  }
+  .nav__menu-list{
+    position: unset;
+    flex-direction: row;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    align-items: center;
+  }
+  .nav__link::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -16px;
+    left: 0;
+    background-color: whitesmoke;
+    transition: all 0.2s;
+  }
+  
+  .nav__link:hover:before{
+   width: 100%;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/styles/homePage/firstComponent.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap'); */
+.wholeComponent {
+    margin: 0;
+    padding: 50px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    background: grey;
+    text-align: left;
+}
+
+.firstLine {
+    font-size: 36px;
+    padding-left: 100px;
+}
+
+.largeTextFirst {
+    font-size: 15px;
+    padding-left: 100px;
+
+}
+
+.mailCollectorComponent{
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputGroup {
+    height: 50%;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.inputLabel {
+    text-align: left;
+}
+
+.inputField {
+    height: 30px;
+}
+
+.cloud{
+  position: 'fixed';
+  left: '1000px'
+}
+
+
+/* a{
+  text-decoration: none;
+  color: inherit;
+}
+header{
+  position: sticky;
+  z-index: 30;
+  top: 0;
+}
+nav{
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+.nav__menu-bar{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  cursor: pointer;
+}
+.nav__menu-bar div{
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+}
+.nav__menu-list{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  width: 288px;
+  row-gap: 24px;
+  right: -288px;
+  padding: 24px 16px;
+  transition: all 0.2s;
+  min-height: calc(100vh - 60px);
+  background-color: black;
+}
+.nav__menu-list.active{
+  right: 0;
+}
+.nav__link{
+  font-size: 18px; 
+  position: relative;
+  transition: all 0.2s;
+}
+
+.nav__link:hover{
+ font-weight: bold;
+}
+
+.center{
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .nav__menu-bar{
+    display: none;
+  }
+  .nav__menu-list{
+    position: unset;
+    flex-direction: row;
+    min-height: fit-content;
+    width: fit-content;
+    column-gap: 24px;
+    align-items: center;
+  }
+  .nav__link::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -16px;
+    left: 0;
+    background-color: whitesmoke;
+    transition: all 0.2s;
+  }
+  
+  .nav__link:hover:before{
+   width: 100%;
+  }
+} */
