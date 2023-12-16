@@ -48,7 +48,7 @@ function FirstComponent(req, res) {
             <div className='wholeComponent'>
                 <div>
                     <p className='firstLine'>
-                        Don't Judge, Just <span className='firstLine-span'>Explore!</span> 
+                        Don&apos;t Judge, Just <span className='firstLine-span'>Explore!</span> 
                     </p>
                     <br />
                     <p className='largeTextFirst'>
