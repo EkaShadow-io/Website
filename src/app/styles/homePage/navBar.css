@@ -20,7 +20,8 @@ nav{
   padding: 16px;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
+  background-color: grey;
+  height: 50px;
 }
 .nav__menu-bar{
   display: flex;
@@ -45,7 +46,7 @@ nav{
   padding: 24px 16px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
-  background-color: black;
+  background-color: grey;
 }
 .nav__menu-list.active{
   right: 0;
@@ -77,6 +78,7 @@ nav{
     width: fit-content;
     column-gap: 24px;
     align-items: center;
+    height: 30px;
   }
   .nav__link::before{
     content: '';

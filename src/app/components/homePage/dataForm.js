@@ -13,8 +13,9 @@ const FormContainer = styled('div')({
   justifyContent: 'center',
   height: '100vh',
   position: 'fixed',
-  left: '1000px',
-  top: '-80px'
+  left: '1050px',
+  top: '10px',
+  marginTop: '-80px'
 
   // Bottom: '1100px',
   // position: 
@@ -27,7 +28,7 @@ const StyledForm = styled('form')({
   borderRadius: '10px',
   border: '2px solid #1E3A8A',
   boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)',
-  backgroundColor: '#ffffff',
+  backgroundColor: '#fff',
   textAlign: 'center',
 });
 
@@ -36,6 +37,9 @@ const StyledTextField = styled(TextField)({
   width: '100%',
 });
 
+const StyledMuiButton = styled(MuiButton)({
+   color: 'black',
+});
 
 export default function Form() {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -107,12 +111,12 @@ export default function Form() {
           />
           {errors.email && <Alert severity="error">{errors.email.message}</Alert>}
 
-          <MuiButton
+          <StyledMuiButton
             type="submit"
             variant="contained"
             color="primary"
             margin="5px"
-            onClick={handleSubmit(onSubmit)} > Submit </MuiButton>
+            onClick={handleSubmit(onSubmit)} > Submit </StyledMuiButton>
         </StyledForm>
       </FormContainer>
     </>

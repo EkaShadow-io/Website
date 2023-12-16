@@ -5,18 +5,20 @@
     outline: none;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
-    background: grey;
+    background: #000000;
     text-align: left;
 }
 
 .firstLine {
-    font-size: 36px;
-    padding-left: 100px;
+    font-size: 65px;
+    padding-left: 30px;
+    font-weight: 800;
+    padding-top: 40px;
 }
 
 .largeTextFirst {
-    font-size: 15px;
-    padding-left: 100px;
+    font-size: 25px;
+    padding-left: 30px;
 
 }
 
@@ -44,10 +46,17 @@
 .inputField {
     height: 30px;
 }
-
+.cloud-box{
+  width: 597px;
+  margin-left: 800px;
+  margin-top: -190px;
+}
 .cloud{
-  position: 'fixed';
-  left: '1000px'
+  /* position: 'fixed'; */
+  /* left: '1000px'; */
+   margin-left: 50px;
+   width: 950px;
+   height: 500px;
 }
 
 
@@ -138,3 +147,40 @@ nav{
    width: 100%;
   }
 } */
+@media screen and (min-width: 375px)and (max-width: 775px){
+  .wholeComponent {
+    margin: 0;
+    padding:0px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    background: #000000;
+    text-align: left;
+}
+  .firstLine {
+    font-size: 25px;
+    padding-left: 30px;
+    font-weight: 800;
+    padding-top: 40px;
+}
+.firstLine-span{
+  font-size: 50px;
+}
+.largeTextFirst {
+  font-size: 20px;
+  padding-left: 20px;
+
+}
+.cloud-box{
+  width: 597px;
+  margin-left: 0px;
+  margin-top: -190px;
+}
+.cloud{
+  /* position: 'fixed'; */
+  /* left: '1000px'; */
+   margin-left: 50px;
+   width: 950px;
+   height: 500px;
+}
+} 

@@ -48,19 +48,20 @@ function FirstComponent(req, res) {
             <div className='wholeComponent'>
                 <div>
                     <p className='firstLine'>
-                        Don't Judge, Just Explore!
+                        Don't Judge, Just <span className='firstLine-span'>Explore!</span> 
                     </p>
                     <br />
                     <p className='largeTextFirst'>
                         A Balanced academic industry approach for uplifting students <br />
-                        by enhanced learning for skill development leading to informed career choices <br />
-                        resulting increased employability, creating innovative mindset <br />
+                        by enhanced learning for skill development leading to informed career <br /> 
+                        choices resulting increased employability, creating innovative mindset <br />
                         for open-source with professional evaluation for tough competition <br />
                         in this ever evoloving world of technologies.
                     </p>
                     {/* <Form /> */}
-                    <div className='cloud'>
-                        <Image 
+                    <div className='cloud-box' >
+                        <Image
+                        className='cloud' 
                         src={cloud}
                         alt="Cloud Data"
                         />
