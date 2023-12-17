@@ -5,7 +5,7 @@ import Image from "next/image";
 import { React, useState } from "react";
 import Logo from "./Logo";
 import NavItem from "./navItems";
-// import navbarlogo from "../../../../assets/navbarlogo.png";
+import navbarlogo from "../../../../assets/navbarlogo.png";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
@@ -22,12 +22,12 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link legacyBehavior href={"/"}>
-        <a className="logo-box">
-            <Image 
-            src="/2ZesJxKxaVeHTF2xP9T7w7v3TXo.svg"
-            className="navbar-logo"
-            width="0"
-            height="0"/>
+          <a className="logo-box">
+            <Image
+              className="navbar-logo"
+              src={navbarlogo}
+              width="0"
+              height="0" />
             <h1 className="logo">EkaShadow</h1>
           </a>
         </Link>
