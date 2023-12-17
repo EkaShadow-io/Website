@@ -11,7 +11,7 @@ function Home() {
             <>
                 <Navbar />
                 <FirstComponent />
-                <Form />
+                {/* <Form /> */}
                 <SecondComponent />
                 <Footer />
                 {/* <Component {...pageProps} /> */}
