@@ -1,64 +1,90 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap'); */
 
 .wholeComponent {
-    margin: 0;
-    padding: 50px;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
-    background: #000000;
-    text-align: left;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 50px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  background: #000000;
+  text-align: left;
+  overflow-x: hidden;
 }
 
 .firstLine {
-    font-size: 65px;
-    padding-left: 30px;
-    font-weight: 800;
-    padding-top: 40px;
+  font-size: 65px;
+  padding-left: 30px;
+  font-weight: 800;
+  padding-top: 40px;
 }
 
 .largeTextFirst {
-    font-size: 25px;
-    padding-left: 30px;
+  font-size: 25px;
+  padding-left: 30px;
 
 }
 
-.mailCollectorComponent{
-    padding: 5rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.mailCollectorComponent {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputGroup {
-    height: 50%;
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
+  height: 50%;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
 }
 
 .inputLabel {
-    text-align: left;
+  text-align: left;
 }
 
 .inputField {
-    height: 30px;
+  height: 30px;
 }
-.cloud-box{
+
+.cloud-box {
   width: 597px;
   margin-left: 800px;
   margin-top: -190px;
+  display: flex;
 }
-.cloud{
-  /* position: 'fixed'; */
-  /* left: '1000px'; */
-   margin-left: 50px;
-   width: 950px;
-   height: 500px;
+
+.cloud {
+  margin-left: 50px;
+  width: 950px;
+  height: 500px;
+}
+
+.organization {
+  margin-top: 290px;
+  margin-left:-1150px;
+  margin-bottom: 150px;
+  font-size: 25px;
+}
+
+.companyLogos{
+  /* display: flex; */
+  margin-left: 150px;
+  margin-top: -110px;
+}
+.razorpay{
+margin-left: 200px;
+margin-top: -55px;
+}
+.azure{
+  margin-left: 400px;
+  margin-top: -50px;
+}
+.tensorflow{
+  margin-left: 600px;
+  margin-top: -75px;
 }
 
 
@@ -149,41 +175,93 @@ nav{
    width: 100%;
   }
 } */
-@media screen and (min-width: 375px)and (max-width: 775px){
+@media screen and (min-width: 375px)and (max-width: 775px) {
   .wholeComponent {
     margin: 0;
-    padding:0px;
+    padding: 0px;
     outline: none;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
     background: #000000;
     text-align: left;
     overflow-y: hidden;
-}
+  }
+
   .firstLine {
-    font-size: 25px;
+    font-size: 32px;
     padding-left: 30px;
     font-weight: 800;
     padding-top: 40px;
-}
-.firstLine-span{
-  font-size: 50px;
-}
-.largeTextFirst {
-  font-size: 20px;
-  padding-left: 20px;
+  }
 
+  .firstLine-span {
+    font-size: 50px;
+  }
+
+  .largeTextFirst {
+    font-size: 18px;
+    padding-left: 20px;
+
+  }
+
+  .cloud-box {
+    width: 597px;
+    margin-left: 0px;
+    margin-top: -190px;
+  }
+
+  .cloud {
+    /* position: 'fixed'; */
+    /* left: '1000px'; */
+    margin-left: 50px;
+    width: 950px;
+    height: 500px;
+  }
+  .organization {
+    margin-top: 240px;
+    margin-left:-590px;
+    margin-bottom: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 300px;
+    text-align: center;
+  }
+  
+.companyLogos{
+  /* display: flex; */
+  margin-left: 35px;
+  margin-top: -150px;
 }
-.cloud-box{
-  width: 597px;
-  margin-left: 0px;
-  margin-top: -190px;
+.awslogo{
+  margin-top: -60px;
 }
-.cloud{
-  /* position: 'fixed'; */
-  /* left: '1000px'; */
-   margin-left: 50px;
-   width: 950px;
-   height: 500px;
+.razorpay{
+margin-left: 190px;
+margin-top: -60px;
 }
-} 
+.azure{
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.tensorflow{
+  margin-left: 190px;
+  margin-top: -75px;
+}
+}
+
+@media screen and (min-width: 778px)and (max-width: 950px) {
+  .organization {
+    margin-top: 240px;
+    margin-left:-1400px;
+    margin-bottom: 150px;
+    font-size: 30px;
+    font-weight: 700;
+    /* width: 300px; */
+    text-align: center;
+  }
+  .companyLogos{
+    /* display: flex; */
+    margin-left: -33px;
+    margin-top: -150px;
+  }
+}

@@ -2,10 +2,10 @@
 "use client"
 import Link from "next/link";
 import Image from "next/image";
-import { React,  useState } from "react";
+import { React, useState } from "react";
 import Logo from "./Logo";
 import NavItem from "./navItems";
-
+// import navbarlogo from "../../../../assets/navbarlogo.png";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
@@ -22,11 +22,12 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link legacyBehavior href={"/"}>
-          <a>
-            {/* <Image 
-            src="/logo.svg"
-            width="1"
-            height="1"/> */}
+        <a className="logo-box">
+            <Image 
+            src="/2ZesJxKxaVeHTF2xP9T7w7v3TXo.svg"
+            className="navbar-logo"
+            width="0"
+            height="0"/>
             <h1 className="logo">EkaShadow</h1>
           </a>
         </Link>

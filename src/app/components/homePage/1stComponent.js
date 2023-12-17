@@ -4,6 +4,12 @@ import { useState } from 'react';
 import "../../styles/homePage/firstComponent.css"
 import Form from './dataForm';
 import cloud from "../../../../assets/cloud.png";
+import awsLogo from "../../../../assets/awsLogo.png";
+import razorpay from "../../../../assets/razorpay.png";
+import redhat from "../../../../assets/redhat.svg";
+// import tensorflow from "../../../../assets/tensorflow.png";
+import tensorflow from "../../../../assets/tensorflow.svg";
+import azure from "../../../../assets/azure.svg";
 
 function FirstComponent(req, res) {
     const [name, setName] = useState('')
@@ -48,12 +54,12 @@ function FirstComponent(req, res) {
             <div className='wholeComponent'>
                 <div>
                     <p className='firstLine'>
-                        Don&apos;t Judge, Just <span className='firstLine-span'>Explore!</span> 
+                        Don&apos;t Judge, Just <span className='firstLine-span'>Explore!</span>
                     </p>
                     <br />
                     <p className='largeTextFirst'>
                         A Balanced academic industry approach for uplifting students <br />
-                        by enhanced learning for skill development leading to informed career <br /> 
+                        by enhanced learning for skill development leading to informed career <br />
                         choices resulting increased employability, creating innovative mindset <br />
                         for open-source with professional evaluation for tough competition <br />
                         in this ever evoloving world of technologies.
@@ -61,11 +67,24 @@ function FirstComponent(req, res) {
                     {/* <Form /> */}
                     <div className='cloud-box' >
                         <Image
-                        className='cloud' 
-                        src={cloud}
-                        alt="Cloud Data"
+                            className='cloud'
+                            src={cloud}
+                            alt="Cloud Data"
                         />
+                        <p className="organization">Trusted by World Leading Organizations</p>
                     </div>
+                    <div className='companyLogos'>
+                        <Image className='awsLogo' src={awsLogo} alt="AWS Logo" width='150' height='150' />
+                        <Image className='razorpay' src={razorpay} alt="Razorpay Logo" width='150' height='150' />
+                        <Image className='azure' src={azure} alt="azure logo" width='150' height='150' />
+                        <Image className='tensorflow' src={tensorflow} alt="Tensorflow Logo" width='150' height='150' />
+                    </div>
+                    {/* <div className='companyLogos'>
+                        <Image className='razorpay' src={razorpay} alt="Razorpay Logo" width='100' height='100' />
+                    </div> */}
+
+
+
                     {/* //MailBox & MailConnector */}
                     {/* <div className={styles.container}> */}
                     {/* < form className='wholeComponent' > */}

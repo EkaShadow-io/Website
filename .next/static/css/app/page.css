@@ -1,0 +1,610 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/styles/homePage/navBar.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+header{
+  position: sticky;
+  z-index: 30;
+  top: 0;
+}
+.logo-box{
+  display: flex;
+}
+.navbar-logo{
+  width: 130px;
+  height: 130px;
+  margin-top: 0px;
+  margin-left: 15px;
+}
+.logo{
+  margin-top: 50px;
+  margin-left: -25px;
+  color: rgb(21, 3, 37);
+  font-weight:600;
+}
+nav{
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  height: 80px;
+}
+.nav__menu-bar{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  cursor: pointer;
+}
+.nav__menu-bar div{
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+}
+.nav__menu-list{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  width: 288px;
+  row-gap: 24px;
+  right: -288px;
+  padding: 24px 16px;
+  transition: all 0.2s;
+  min-height: calc(100vh - 60px);
+  background-color: grey;
+}
+.nav__menu-list.active{
+  right: 0;
+}
+.nav__link{
+  font-size: 18px; 
+  position: relative;
+  transition: all 0.2s;
+}
+
+.nav__link:hover{
+ font-weight: bold;
+}
+
+.center{
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .nav__menu-bar{
+    display: none;
+  }
+  .nav__menu-list{
+    position: unset;
+    flex-direction: row;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    align-items: center;
+    height: 30px;
+  }
+  .nav__link::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -16px;
+    left: 0;
+    background-color: whitesmoke;
+    transition: all 0.2s;
+  }
+  
+  .nav__link:hover:before{
+   width: 100%;
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/styles/homePage/firstComponent.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap'); */
+
+.wholeComponent {
+  margin: 0;
+  padding: 50px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  background: #000000;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+.firstLine {
+  font-size: 65px;
+  padding-left: 30px;
+  font-weight: 800;
+  padding-top: 40px;
+}
+
+.largeTextFirst {
+  font-size: 25px;
+  padding-left: 30px;
+
+}
+
+.mailCollectorComponent {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputGroup {
+  height: 50%;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.inputLabel {
+  text-align: left;
+}
+
+.inputField {
+  height: 30px;
+}
+
+.cloud-box {
+  width: 597px;
+  margin-left: 800px;
+  margin-top: -190px;
+  display: flex;
+}
+
+.cloud {
+  margin-left: 50px;
+  width: 950px;
+  height: 500px;
+}
+
+.organization {
+  margin-top: 290px;
+  margin-left:-1150px;
+  margin-bottom: 150px;
+  font-size: 25px;
+}
+
+.companyLogos{
+  /* display: flex; */
+  margin-left: 150px;
+  margin-top: -110px;
+}
+.razorpay{
+margin-left: 200px;
+margin-top: -55px;
+}
+.azure{
+  margin-left: 400px;
+  margin-top: -50px;
+}
+.tensorflow{
+  margin-left: 600px;
+  margin-top: -75px;
+}
+
+
+/* a{
+  text-decoration: none;
+  color: inherit;
+}
+header{
+  position: sticky;
+  z-index: 30;
+  top: 0;
+}
+nav{
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+.nav__menu-bar{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  cursor: pointer;
+}
+.nav__menu-bar div{
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+}
+.nav__menu-list{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  width: 288px;
+  row-gap: 24px;
+  right: -288px;
+  padding: 24px 16px;
+  transition: all 0.2s;
+  min-height: calc(100vh - 60px);
+  background-color: black;
+}
+.nav__menu-list.active{
+  right: 0;
+}
+.nav__link{
+  font-size: 18px; 
+  position: relative;
+  transition: all 0.2s;
+}
+
+.nav__link:hover{
+ font-weight: bold;
+}
+
+.center{
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .nav__menu-bar{
+    display: none;
+  }
+  .nav__menu-list{
+    position: unset;
+    flex-direction: row;
+    min-height: fit-content;
+    width: fit-content;
+    column-gap: 24px;
+    align-items: center;
+  }
+  .nav__link::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -16px;
+    left: 0;
+    background-color: whitesmoke;
+    transition: all 0.2s;
+  }
+  
+  .nav__link:hover:before{
+   width: 100%;
+  }
+} */
+@media screen and (min-width: 375px)and (max-width: 775px) {
+  .wholeComponent {
+    margin: 0;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    background: #000000;
+    text-align: left;
+    overflow-y: hidden;
+  }
+
+  .firstLine {
+    font-size: 32px;
+    padding-left: 30px;
+    font-weight: 800;
+    padding-top: 40px;
+  }
+
+  .firstLine-span {
+    font-size: 50px;
+  }
+
+  .largeTextFirst {
+    font-size: 18px;
+    padding-left: 20px;
+
+  }
+
+  .cloud-box {
+    width: 597px;
+    margin-left: 0px;
+    margin-top: -190px;
+  }
+
+  .cloud {
+    /* position: 'fixed'; */
+    /* left: '1000px'; */
+    margin-left: 50px;
+    width: 950px;
+    height: 500px;
+  }
+  .organization {
+    margin-top: 240px;
+    margin-left:-590px;
+    margin-bottom: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 300px;
+    text-align: center;
+  }
+  
+.companyLogos{
+  /* display: flex; */
+  margin-left: 35px;
+  margin-top: -150px;
+}
+.awslogo{
+  margin-top: -60px;
+}
+.razorpay{
+margin-left: 190px;
+margin-top: -60px;
+}
+.azure{
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.tensorflow{
+  margin-left: 190px;
+  margin-top: -75px;
+}
+}
+
+@media screen and (min-width: 778px)and (max-width: 950px) {
+  .organization {
+    margin-top: 240px;
+    margin-left:-1400px;
+    margin-bottom: 150px;
+    font-size: 30px;
+    font-weight: 700;
+    /* width: 300px; */
+    text-align: center;
+  }
+  .companyLogos{
+    /* display: flex; */
+    margin-left: -33px;
+    margin-top: -150px;
+  }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/styles/homePage/secondComponent.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.Componentsecond{
+
+}
+
+.visionheading{
+font-size: 78px;
+margin-left: 300px;
+margin-top: 50px;
+}
+
+.visiontext{
+    font-size: 40px;
+    margin-left: 50px;
+}
+.visiontext-parttwo{
+    font-size: 40px;
+    margin-left: 300px;
+}
+
+.border-box{
+    width: 250px;
+    height: 200px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+.firstbox{
+    display: flex;
+    color: #fff;
+    margin-left: 100px;
+}
+.secondbox{
+    display: flex;
+    margin-top: 50px;
+    color: #fff;
+    margin-left: 100px;
+    margin-bottom: 90px;
+}
+.left{
+    border: 1px solid #fff;
+     border-radius: 8px;
+     width: 350px;
+     height: 190px;  
+    }
+.right{
+    border: 1px solid #fff;
+     border-radius: 8px;
+     width: 350px;
+     height: 190px;
+     margin-left: 50px;
+     
+}
+.firstpara{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.image{
+    border-radius: 8px;
+    border: 1px solid #fff;
+    fill: #fff;
+    width: 80px;
+    height: 80px;
+    stroke: #fff;
+}
+.first-heading{
+    margin-left: 20px;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.first-second-heading{
+    margin-left: 35px;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.second-heading{
+    margin-left:65px ;
+}
+.third-heading{
+    margin-left: 120px;
+}
+
+
+@media screen and (min-width: 375px)and (max-width: 775px) {
+   .visionheading{
+font-size: 45px;
+margin-left: 90px;
+margin-top: 50px;
+font-weight: 700;
+}
+
+.visiontext{
+    font-size: 20px;
+    margin-left: 25px;
+}
+.visiontext-parttwo{
+    font-size: 20px;
+    margin-left: 16
+    0px;
+    margin-top: -30px;
+}
+
+/* .firstbox{
+    display: flex;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.secondbox{
+    display: flex;
+    margin-top: 20px;
+    color: #fff;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+.left{
+    border: 1px solid #fff;
+     border-radius: 8px;
+     width: 190px;
+     height: 150px; 
+      
+    }
+.right{
+    border: 1px solid #fff;
+     border-radius: 8px;
+     width: 190px;
+     height: 150px;
+     margin-left: 20px;
+     
+}
+.firstpara{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.image{
+    border-radius: 8px;
+    border: 1px solid #fff;
+    fill: #fff;
+    width: 40px;
+    height: 40px;
+    stroke: #fff;
+}
+.first-heading{
+    margin-left: 8px;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.first-second-heading{
+    margin-left: 12px;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.second-heading{
+    margin-left:5px;
+    margin-top: 5px;
+}
+.third-heading{
+    margin-left: 50px;
+} */
+.firstbox{
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 50px;
+    display:grid;
+}
+.secondbox{
+    margin-top: 20px;
+    color: #fff;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    display: grid;
+}
+.left{
+    border: 1px solid #fff;
+     border-radius: 8px;
+     width: 310px;
+     height: 190px; 
+      
+    }
+.right{
+    border: 1px solid #fff;
+     border-radius: 8px;
+     width: 310px;
+     height: 190px;
+     margin-left: 0px;
+     margin-top: 20px;
+     
+}
+.firstpara{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.image{
+    border-radius: 8px;
+    border: 1px solid #fff;
+    width: 80px;
+    height: 80px;
+}
+.first-heading{
+    margin-left: 20px;
+    font-size: 28px;
+    text-decoration: underline;
+}
+.first-second-heading{
+    margin-left: 12px;
+    font-size: 28px;
+    text-decoration: underline;
+}
+.second-heading{
+    margin-left:20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.third-heading{
+    margin-left: 150px;
+    font-size: 20px;
+}
+  }
