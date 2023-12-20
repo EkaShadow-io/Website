@@ -7,7 +7,6 @@ import cloud from "../../../../assets/cloud.png";
 import awsLogo from "../../../../assets/awsLogo.png";
 import razorpay from "../../../../assets/razorpay.png";
 import redhat from "../../../../assets/redhat.svg";
-// import tensorflow from "../../../../assets/tensorflow.png";
 import tensorflow from "../../../../assets/tensorflow.svg";
 import azure from "../../../../assets/azure.svg";
 

@@ -1,11 +1,11 @@
 "use client"
 import React, { useState } from "react";
 import Image from 'next/image';
-import { Card, CardHeader, CardBody, CardFooter, Avatar, Button } from "@nextui-org/react";
+// import { Card, CardHeader, CardBody, CardFooter, Avatar, Button } from "@nextui-org/react";
 import awareness from "../../../../assets/awareness.svg";
-import growth from "../../../../assets/growth.svg";
 import evaluation from "../../../../assets/evaluation.svg";
 import execution from "../../../../assets/execution.svg";
+import growth from "../../../../assets/growth-removebg-preview.png";
 
 import "../../styles/homePage/secondComponent.css";
 

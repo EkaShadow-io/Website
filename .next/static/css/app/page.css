@@ -86,6 +86,15 @@ nav{
   align-items: center;
 }
 @media screen and (min-width: 768px) {
+  .navbar-logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: -5px;
+  }
+  .logo{
+    margin-top: 35px;
+  }
   .nav__menu-bar{
     display: none;
   }
@@ -116,6 +125,18 @@ nav{
    width: 100%;
   }
 }
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .navbar-logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: -35px;
+  }
+  .logo{
+    font-size: 15px;
+  }
+}
+
 /*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/styles/homePage/firstComponent.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************/
@@ -130,6 +151,7 @@ nav{
   background: #000000;
   text-align: left;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .firstLine {
@@ -175,6 +197,7 @@ nav{
   margin-left: 800px;
   margin-top: -190px;
   display: flex;
+  
 }
 
 .cloud {
@@ -186,14 +209,14 @@ nav{
 .organization {
   margin-top: 290px;
   margin-left:-1150px;
-  margin-bottom: 150px;
+  margin-bottom: 0px;
   font-size: 25px;
 }
 
 .companyLogos{
   /* display: flex; */
   margin-left: 150px;
-  margin-top: -110px;
+  margin-top: -130px;
 }
 .razorpay{
 margin-left: 200px;
@@ -296,7 +319,7 @@ nav{
    width: 100%;
   }
 } */
-@media screen and (min-width: 375px)and (max-width: 775px) {
+@media screen and (min-width: 320px)and (max-width: 775px) {
   .wholeComponent {
     margin: 0;
     padding: 0px;
@@ -350,7 +373,7 @@ nav{
   
 .companyLogos{
   /* display: flex; */
-  margin-left: 35px;
+  margin-left:20px;
   margin-top: -150px;
 }
 .awslogo{
@@ -368,11 +391,12 @@ margin-top: -60px;
   margin-left: 190px;
   margin-top: -75px;
 }
+
 }
 
 @media screen and (min-width: 778px)and (max-width: 950px) {
-  .organization {
-    margin-top: 240px;
+    .organization {
+    margin-top: 300px;
     margin-left:-1400px;
     margin-bottom: 150px;
     font-size: 30px;
@@ -383,16 +407,12 @@ margin-top: -60px;
   .companyLogos{
     /* display: flex; */
     margin-left: -33px;
-    margin-top: -150px;
+    margin-top: -106px;
   }
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/styles/homePage/secondComponent.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************/
-.Componentsecond{
-
-}
-
 .visionheading{
 font-size: 78px;
 margin-left: 300px;
@@ -418,6 +438,7 @@ margin-top: 50px;
     display: flex;
     color: #fff;
     margin-left: 100px;
+    margin-top: 50px;
 }
 .secondbox{
     display: flex;
@@ -471,7 +492,7 @@ margin-top: 50px;
 }
 
 
-@media screen and (min-width: 375px)and (max-width: 775px) {
+@media screen and (min-width: 350px)and (max-width: 767px) {
    .visionheading{
 font-size: 45px;
 margin-left: 90px;
@@ -485,8 +506,7 @@ font-weight: 700;
 }
 .visiontext-parttwo{
     font-size: 20px;
-    margin-left: 16
-    0px;
+    margin-left: 160px;
     margin-top: -30px;
 }
 
@@ -548,16 +568,19 @@ font-weight: 700;
 .third-heading{
     margin-left: 50px;
 } */
+.visiontext-parttwo{
+    margin-left: 160px;
+}
 .firstbox{
     color: #fff;
-    margin-left: 50px;
+    margin-left: 70px;
     margin-top: 50px;
     display:grid;
 }
 .secondbox{
     margin-top: 20px;
     color: #fff;
-    margin-left: 50px;
+    margin-left: 70px;
     margin-bottom: 50px;
     display: grid;
 }
@@ -566,6 +589,7 @@ font-weight: 700;
      border-radius: 8px;
      width: 310px;
      height: 190px; 
+     margin-left: -17px;
       
     }
 .right{
@@ -573,7 +597,7 @@ font-weight: 700;
      border-radius: 8px;
      width: 310px;
      height: 190px;
-     margin-left: 0px;
+     margin-left: -17px;
      margin-top: 20px;
      
 }
@@ -608,3 +632,270 @@ font-weight: 700;
     font-size: 20px;
 }
   }
+
+  @media screen and (min-width: 768px) and (max-width:950px) {
+    .visionheading{
+        margin-top: 120px;
+        margin-left: 200px;
+    }
+    .visiontext{
+     font-size: 30px;
+     margin-left: 38px;
+    }
+    .visiontext-parttwo{
+        margin-left: 210px;
+    }
+    .left{
+     margin-left: -72px;
+    }
+    .second-heading{
+        margin-top: 15px;
+    }
+  }
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/styles/homePage/thirdComponent.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.misionheading{
+    font-size: 70px;
+    margin-left: 300px;
+    margin-top: 150px;
+    }
+    
+    .misiontext{
+        font-size: 25px;
+        margin-left: 50px;
+    }
+    .misiontext-parttwo{
+        font-size: 25px;
+        margin-left: 130px;
+    }
+    .imagetwo{
+        margin-left: 190px;
+        margin-top: 20px;
+    }
+    
+
+    .firstrow{
+        display: flex;
+        color: #fff;
+        margin-left: 100px;
+    }
+    .secondrow{
+        display: flex;
+        margin-top: 50px;
+        color: #fff;
+        margin-left: 100px;
+        margin-bottom: 90px;
+    }
+    .thirdComponentleft-box{
+        border: 1px solid #fff;
+         border-radius: 8px;
+         width: 350px;
+         height: 300px;
+         text-align: center;
+         padding: 8px;
+        }
+    .thirdComponentright-box{
+        border: 1px solid #fff;
+         border-radius: 8px;
+         width: 350px;
+         height: 300px;
+         margin-left: 50px;
+         text-align: center;
+         padding: 8px;
+    }
+    .thirdComponentfirstpara{
+        display: flex;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .imagee{
+        border-radius: 8px;
+        border: 1px solid #fff;
+        fill: #fff;
+        width: 80px;
+        height: 80px;
+        stroke: #fff;
+    }
+    .thirdComponentfirst-second-heading{
+        margin-left: 20px;
+        font-size: 22px;
+        text-decoration: underline;
+    }
+    .first-second-heading{
+        margin-left: 35px;
+        font-size: 22px;
+        text-decoration: underline;
+    }
+    .thirdComponentsecond-heading{
+        margin-left:0px ;
+        margin-top: 15px;
+    }
+    
+    
+    @media screen and ( min-width: 350px ) and ( max-width: 767px ) {
+    
+    .misionheading{
+    font-size: 45px;
+    margin-left: 70px;
+    margin-top: 90px;
+    font-weight: 700;
+    }
+    
+    .misiontext{
+        font-size: 22px;
+        margin-left: 14px;
+        margin-top: 20px;
+    }
+    .misiontext-parttwo{
+        font-size: 22px;
+        margin-left: 14px;
+        margin-top: 15px;
+    }
+    
+    /* .firstbox{
+        display: flex;
+        color: #fff;
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .secondbox{
+        display: flex;
+        margin-top: 20px;
+        color: #fff;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+    .left{
+        border: 1px solid #fff;
+         border-radius: 8px;
+         width: 190px;
+         height: 150px; 
+          
+        }
+    .right{
+        border: 1px solid #fff;
+         border-radius: 8px;
+         width: 190px;
+         height: 150px;
+         margin-left: 20px;
+         
+    }
+    .firstpara{
+        display: flex;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .image{
+        border-radius: 8px;
+        border: 1px solid #fff;
+        fill: #fff;
+        width: 40px;
+        height: 40px;
+        stroke: #fff;
+    }
+    .first-heading{
+        margin-left: 8px;
+        font-size: 22px;
+        text-decoration: underline;
+    }
+    .first-second-heading{
+        margin-left: 12px;
+        font-size: 22px;
+        text-decoration: underline;
+    }
+    .second-heading{
+        margin-left:5px;
+        margin-top: 5px;
+    }
+    .third-heading{
+        margin-left: 50px;
+    } */
+    .imagetwo{
+        margin-left: 3px;
+    }
+    .firstrow{
+        color: #fff;
+        margin-left: 80px;
+        margin-top: 50px;
+        display:grid;
+    }
+    .secondrow{
+        margin-top: 20px;
+        color: #fff;
+        margin-left: 80px;
+        margin-bottom: 50px;
+        display: grid;
+    }
+    .thirdComponentleft-box{
+        border: 1px solid #fff;
+         border-radius: 8px;
+         width: 310px;
+         height: 300px; 
+         margin-left: -17px;
+          
+        }
+    .thirdComponentright-box{
+        border: 1px solid #fff;
+         border-radius: 8px;
+         width: 310px;
+         height: 300px;
+         margin-left: -17px;
+         margin-top: 20px;
+         
+    }
+    .thirdComponentfirstpara{
+        display: flex;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .imagee{
+        border-radius: 8px;
+        border: 1px solid #fff;
+        width: 80px;
+        height: 80px;
+    }
+
+    .thirdComponentfirst-second-heading{
+        margin-left: 12px;
+        font-size: 22px;
+        text-decoration: underline;
+    }
+    .thirdComponentsecond-heading{
+        margin-left:0px;
+        margin-top: 15px;
+        font-size:16px;
+    }
+
+
+      }
+    
+      @media screen and ( min-width: 768px ) and ( max-width:950px ) {
+        .misionheading{
+            margin-top: 120px;
+            margin-left: 200px;
+        }
+        .imagee{
+            margin-left: -18px;
+        }
+        .misiontext{
+         font-size: 22px;
+         margin-left: 23px;
+         text-align: center;
+        }
+        .imagetwo{
+            margin-left: 120px;
+        }
+        .misiontext-parttwo{
+            margin-left: 10px;
+            font-size: 22px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .thirdComponentleft-box{
+         margin-left: -72px;
+        }
+        .thirdComponentsecond-heading{
+            margin-top: 15px;
+        }
+      }
