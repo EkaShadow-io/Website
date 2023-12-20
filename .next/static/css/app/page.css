@@ -452,6 +452,7 @@ margin-top: 50px;
      border-radius: 8px;
      width: 350px;
      height: 190px;  
+     cursor: pointer;
     }
 .right{
     border: 1px solid #fff;
@@ -459,6 +460,7 @@ margin-top: 50px;
      width: 350px;
      height: 190px;
      margin-left: 50px;
+     cursor: pointer;
      
 }
 .firstpara{
@@ -590,6 +592,7 @@ font-weight: 700;
      width: 310px;
      height: 190px; 
      margin-left: -17px;
+     cursor: pointer;
       
     }
 .right{
@@ -599,7 +602,7 @@ font-weight: 700;
      height: 190px;
      margin-left: -17px;
      margin-top: 20px;
-     
+     cursor: pointer;
 }
 .firstpara{
     display: flex;
@@ -672,6 +675,7 @@ font-weight: 700;
     .imagetwo{
         margin-left: 190px;
         margin-top: 20px;
+        margin-bottom: 30px;
     }
     
 
@@ -694,6 +698,7 @@ font-weight: 700;
          height: 300px;
          text-align: center;
          padding: 8px;
+         cursor: pointer;
         }
     .thirdComponentright-box{
         border: 1px solid #fff;
@@ -703,6 +708,7 @@ font-weight: 700;
          margin-left: 50px;
          text-align: center;
          padding: 8px;
+         cursor: pointer;
     }
     .thirdComponentfirstpara{
         display: flex;
@@ -866,11 +872,11 @@ font-weight: 700;
         margin-top: 15px;
         font-size:16px;
     }
-
+      
 
       }
     
-      @media screen and ( min-width: 768px ) and ( max-width:950px ) {
+      @media screen and ( min-width: 640px ) and ( max-width:950px ) {
         .misionheading{
             margin-top: 120px;
             margin-left: 200px;
@@ -899,3 +905,10 @@ font-weight: 700;
             margin-top: 15px;
         }
       }
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/styles/homePage/footer.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.Logo-body{
+    margin-left: 150px;
+    margin-top: -30px;
+}

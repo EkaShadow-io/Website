@@ -2,7 +2,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
 import { BiLogoPinterestAlt } from "react-icons/bi";
 import Image from 'next/image'
-
+import "../../app/styles/homePage/footer.css"
 function Footer() {
   const iconsTab = [
     { icon: <FaFacebookF /> },
@@ -17,6 +17,7 @@ function Footer() {
           {/* footer div all */}
           <div className="flex justify-between flex-col md:flex-row  items-center md:items-start  md:gap-[5rem] text-left">
             {/* logo side */}
+            <div className="Logo-body">
             <div className="flex flex-col w-1/2 md:p-0 py-6 gap-6">
               <Image
                 src="/logo.svg"
@@ -54,7 +55,7 @@ function Footer() {
                 </a>
               </p>
             </div>
-
+            </div>
             {/* middle div */}
             <div className="flex flex-col gap-8 relative">
               <p className="text-[22px] font-bold footer-main">Our Classes</p>

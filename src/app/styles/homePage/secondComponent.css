@@ -37,6 +37,7 @@ margin-top: 50px;
      border-radius: 8px;
      width: 350px;
      height: 190px;  
+     cursor: pointer;
     }
 .right{
     border: 1px solid #fff;
@@ -44,6 +45,7 @@ margin-top: 50px;
      width: 350px;
      height: 190px;
      margin-left: 50px;
+     cursor: pointer;
      
 }
 .firstpara{
@@ -175,6 +177,7 @@ font-weight: 700;
      width: 310px;
      height: 190px; 
      margin-left: -17px;
+     cursor: pointer;
       
     }
 .right{
@@ -184,7 +187,7 @@ font-weight: 700;
      height: 190px;
      margin-left: -17px;
      margin-top: 20px;
-     
+     cursor: pointer;
 }
 .firstpara{
     display: flex;
